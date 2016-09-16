@@ -9,7 +9,7 @@
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
-package za.co.neilson.alarm.database;
+package com.bogdancornianu.Wake2Radio.database;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -20,8 +20,8 @@ import java.io.StreamCorruptedException;
 import java.util.ArrayList;
 import java.util.List;
 
-import za.co.neilson.alarm.Alarm;
-import za.co.neilson.alarm.Alarm.Difficulty;
+import com.bogdancornianu.Wake2Radio.Alarm;
+import com.bogdancornianu.Wake2Radio.Alarm.Difficulty;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

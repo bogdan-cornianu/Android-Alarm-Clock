@@ -13,19 +13,21 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="za.co.neilson.alarm"
-    android:versionCode="4"
-    android:versionName="1.3" >
+    package="com.bogdancornianu.Wake2Radio"
+    android:versionCode="8"
+    android:versionName="2.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
+        android:minSdkVersion="16"
+        android:targetSdkVersion="24" />
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	
     <application
         android:allowBackup="true"
@@ -34,7 +36,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
         
         <activity
-            android:name="za.co.neilson.alarm.AlarmActivity"
+            android:name="com.bogdancornianu.Wake2Radio.AlarmActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,36 +45,36 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
         </activity>
         
         <activity
-            android:name="za.co.neilson.alarm.preferences.AlarmPreferencesActivity"
+            android:name="com.bogdancornianu.Wake2Radio.preferences.AlarmPreferencesActivity"
             android:label="@string/app_name"
-            android:parentActivityName="za.co.neilson.alarm.AlarmActivity" >
+            android:parentActivityName="com.bogdancornianu.Wake2Radio.AlarmActivity" >
             <!-- Parent activity meta-data to support API level 7+ -->
 	        <meta-data
 	            android:name="android.support.PARENT_ACTIVITY"
-	            android:value="za.co.neilson.alarm.AlarmActivity" />
+	            android:value="com.bogdancornianu.Wake2Radio.AlarmActivity" />
         </activity>        
         
         <service
-            android:process="za.co.neilson.alarm.serviceProcess"
-            android:name="za.co.neilson.alarm.service.AlarmService"
+            android:process="com.bogdancornianu.Wake2Radio.serviceProcess"
+            android:name="com.bogdancornianu.Wake2Radio.service.AlarmService"
             android:icon="@drawable/ic_launcher"
             android:label="@string/app_name"
             >
         </service>
-		<receiver android:name="za.co.neilson.alarm.service.AlarmServiceBroadcastReciever" >
+		<receiver android:name="com.bogdancornianu.Wake2Radio.service.AlarmServiceBroadcastReciever" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
         
         <activity
-            android:name = "za.co.neilson.alarm.alert.AlarmAlertActivity"
+            android:name = "com.bogdancornianu.Wake2Radio.alert.AlarmAlertActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
-		<receiver android:name="za.co.neilson.alarm.alert.AlarmAlertBroadcastReciever" >
+		<receiver android:name="com.bogdancornianu.Wake2Radio.alert.AlarmAlertBroadcastReciever" >
         </receiver>
-        <receiver android:name = "za.co.neilson.alarm.telephony.PhoneStateChangedBroadcastReciever">
+        <receiver android:name = "com.bogdancornianu.Wake2Radio.telephony.PhoneStateChangedBroadcastReciever">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>

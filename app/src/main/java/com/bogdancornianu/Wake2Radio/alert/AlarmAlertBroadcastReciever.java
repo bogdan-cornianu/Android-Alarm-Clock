@@ -9,10 +9,10 @@
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
-package za.co.neilson.alarm.alert;
+package com.bogdancornianu.Wake2Radio.alert;
 
-import za.co.neilson.alarm.Alarm;
-import za.co.neilson.alarm.service.AlarmServiceBroadcastReciever;
+import com.bogdancornianu.Wake2Radio.Alarm;
+import com.bogdancornianu.Wake2Radio.service.AlarmServiceBroadcastReciever;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;

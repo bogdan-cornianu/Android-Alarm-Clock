@@ -9,16 +9,16 @@
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
-package za.co.neilson.alarm.preferences;
+package com.bogdancornianu.Wake2Radio.preferences;
 
 import java.util.Calendar;
 
-import za.co.neilson.alarm.Alarm;
-import za.co.neilson.alarm.BaseActivity;
-import za.co.neilson.alarm.database.Database;
-import za.co.neilson.alarm.preferences.AlarmPreference.Key;
-import za.co.neilson.alarm.service.AlarmServiceBroadcastReciever;
-import za.co.neilson.alarm.R;
+import com.bogdancornianu.Wake2Radio.Alarm;
+import com.bogdancornianu.Wake2Radio.BaseActivity;
+import com.bogdancornianu.Wake2Radio.database.Database;
+import com.bogdancornianu.Wake2Radio.preferences.AlarmPreference.Key;
+import com.bogdancornianu.Wake2Radio.service.AlarmServiceBroadcastReciever;
+import com.bogdancornianu.Wake2Radio.R;
 import android.app.AlertDialog;
 import android.app.TimePickerDialog;
 import android.app.TimePickerDialog.OnTimeSetListener;

@@ -9,12 +9,13 @@
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
-package za.co.neilson.alarm;
+package com.bogdancornianu.Wake2Radio;
 
 import java.lang.reflect.Field;
 
-import za.co.neilson.alarm.preferences.AlarmPreferencesActivity;
-import za.co.neilson.alarm.service.AlarmServiceBroadcastReciever;
+import com.bogdancornianu.Wake2Radio.R;
+import com.bogdancornianu.Wake2Radio.preferences.AlarmPreferencesActivity;
+import com.bogdancornianu.Wake2Radio.service.AlarmServiceBroadcastReciever;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;

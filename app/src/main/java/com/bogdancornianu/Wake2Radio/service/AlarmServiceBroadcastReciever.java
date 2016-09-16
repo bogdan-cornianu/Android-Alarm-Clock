@@ -9,19 +9,20 @@
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
-package za.co.neilson.alarm.telephony;
+package com.bogdancornianu.Wake2Radio.service;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-public class PhoneStateChangedBroadcastReciever extends BroadcastReceiver {
+public class AlarmServiceBroadcastReciever extends BroadcastReceiver {
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		Log.d(getClass().getSimpleName(), "onReceive()");
-		
+		Log.d("AlarmServiceBroadcastReciever", "onReceive()");
+		Intent serviceIntent = new Intent(context, AlarmService.class);
+		context.startService(serviceIntent);
 	}
 
 }

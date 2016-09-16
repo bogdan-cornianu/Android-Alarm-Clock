@@ -9,13 +9,13 @@
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
-package za.co.neilson.alarm;
+package com.bogdancornianu.Wake2Radio;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import za.co.neilson.alarm.database.Database;
-import za.co.neilson.alarm.R;
+import com.bogdancornianu.Wake2Radio.database.Database;
+import com.bogdancornianu.Wake2Radio.R;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
