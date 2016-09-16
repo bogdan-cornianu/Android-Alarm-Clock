@@ -52,7 +52,17 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 	        <meta-data
 	            android:name="android.support.PARENT_ACTIVITY"
 	            android:value="com.bogdancornianu.Wake2Radio.AlarmActivity" />
-        </activity>        
+        </activity>
+        <activity
+            android:name=".alert.WakeupActivity"
+            android:screenOrientation="portrait"
+            android:label="Wakeup" >
+        </activity>
+        <activity
+            android:name=".RadioActivity"
+            android:screenOrientation="portrait"
+            android:label="Radio List" >
+        </activity>
         
         <service
             android:process="com.bogdancornianu.Wake2Radio.serviceProcess"
